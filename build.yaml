@@ -1,0 +1,11 @@
+# GitHub Actions build matrix for the Corne on nice!nano v2 (ZMK).
+# Produces: corne_left-nice_nano_v2-zmk.uf2, corne_right-nice_nano_v2-zmk.uf2,
+#           settings_reset-nice_nano_v2-zmk.uf2
+---
+include:
+  - board: nice_nano_v2
+    shield: corne_left
+  - board: nice_nano_v2
+    shield: corne_right
+  - board: nice_nano_v2
+    shield: settings_reset
